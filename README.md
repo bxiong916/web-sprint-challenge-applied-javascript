@@ -28,13 +28,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+    The Document Object Model(DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style and content.
+
 2. What is an event?
+
+    When the user or the browser manipulates a page when it loads, when the page loads, when the user clicks a button, that click too is an event.
 
 3. What is an event listener?
 
+    An event listener attaches an event handler to an element without overwriting existing event handlers.
+
 4. Why would we convert a NodeList into an Array?
 
+
+
 5. What is a component?
+
+Components are independent and reusable bits of code. They serve the same purpose as JS functions, but work in isloation and returns HTML via a render function.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -44,12 +54,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Repository Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: `git push origin <firstName-lastName>`
 
 #### Launching the App
 
