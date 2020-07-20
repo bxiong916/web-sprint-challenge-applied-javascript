@@ -40,7 +40,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 4. Why would we convert a NodeList into an Array?
 
-
+    We convert a NodeList into an Array because you can't use methods like  .forEach(),  Array.filter() with a nodelist
 
 5. What is a component?
 
