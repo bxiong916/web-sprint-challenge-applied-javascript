@@ -33,7 +33,7 @@ function headerComponent() {
     headerTitle.textContent = "Lambda Times";
     temp.textContent = "98°";
     
-  return;
+  return header;
 }
 
 const headerContainer = document.querySelector("div.header-container");
