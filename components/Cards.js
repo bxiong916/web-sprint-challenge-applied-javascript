@@ -29,21 +29,8 @@
 
 
 
+
 const { default: Axios } = require("axios")
-
-const cards = document.querySelector('.cards-container')
-const articleURL = 'https://lambda-times-backend.herokuapp.com/articles'
-
-Axios.get(articleURL)
-.then((res) => {
-    const articles = res.data.articles
-    for(let obj in articles){
-        articles[obj].forEach(element => {
-            cards.appendChild(cardMaker(element))
-        });
-    }
-})
-
 
 function cardMaker(obj){
     // DOM Components
@@ -74,3 +61,16 @@ function cardMaker(obj){
 
     return card
 } 
+
+const cards = document.querySelector('.cards-container')
+const articleURL = 'https://lambda-times-backend.herokuapp.com/articles'
+
+Axios.get(articleURL)
+.then((res) => {
+    const articles = res.data.articles
+    for(let obj in articles){
+        articles[obj].forEach(element => {
+            cards.appendChild(cardMaker(element))
+        });
+    }
+})
