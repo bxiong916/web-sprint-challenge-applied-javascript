@@ -33,7 +33,7 @@
 const { default: Axios } = require("axios")
 
 function cardMaker(obj){
-    // DOM Components
+    // DOM  Section
     const card = document.createElement('div')
     const headline = document.createElement('div')
     const author = document.createElement('div')
@@ -59,12 +59,19 @@ function cardMaker(obj){
     img.src = obj.authorPhoto
     authorName.textContent = obj.authorName
 
+    // Event Handler Section
+    card.addEventListener('click', () => {
+        console.log(obj.headline);
+    })
+
     return card
 } 
 
+// Panel Section
 const cards = document.querySelector('.cards-container')
 const articleURL = 'https://lambda-times-backend.herokuapp.com/articles'
 
+// Axios Section
 Axios.get(articleURL)
 .then((res) => {
     const articles = res.data.articles

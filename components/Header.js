@@ -13,7 +13,7 @@
 
 
 function headerComponent() {
-  // DOM Components
+  // DOM Section
   const header = document.createElement("div");
   const dateLine = document.createElement("span");
   const headerTitle = document.createElement("h1");
@@ -36,6 +36,7 @@ function headerComponent() {
   return header;
 }
 
+// Panel Section
 const headerContainer = document.querySelector("div.header-container");
 
 headerContainer.appendChild(headerComponent());
